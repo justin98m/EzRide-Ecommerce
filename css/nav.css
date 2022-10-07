@@ -3,18 +3,18 @@ https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-usi
 */
 /******    Nav Bar Default Styling  ********/
 /*Outter Most Container*/
+.navContainer{
+  border-bottom: black solid 2px;
+}
 nav{
-  background-color: #c4bdac;
-  border: solid blue;
-  height: 13%;
+  background-color: #9AD0B7;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
 }
 /*Nav bar content positioning*/
-nav .navMenu{
-  border: solid yellow;
+.navMenu{
   font-family: navFont;
   font-size: 18px;
   display: flex;
@@ -36,7 +36,6 @@ nav .navMenu{
   justify-content: space-between;
 }
 .navCenter{
-  border: solid green;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -48,10 +47,17 @@ nav .navMenu{
   width: 105px;
   height: auto;
 }
-.navLink, .navLink:active{
+.mobileLogo{
+  display: none;
+}
+
+.navLink{
   text-decoration: none;
   color: inherit;
-  border: solid red;
+}
+
+.navLink.active{
+  color: #6C0000;
 }
 .navRight{
   display: flex;
@@ -63,21 +69,50 @@ nav .navMenu{
   text-decoration: none;
   list-style: none;
 }
-.backupLogo{
-  display: none;
-}
 .hamburger{
   display: none;
 }
+.hamburgerBar {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin: 6px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
 /*Tablet and smaller styling*/
 @media screen and (max-width: 831px) {
-  nav .navMenu{
+  /*default mobile nav bar settings*/
+  .navMenu{
     position: fixed;
-    left: -100%;
+    /*hide nav bar by default*/
+    right: 100%;
+    top: 6rem;
+    width: 50%;
+    /*change flex to top down */
+    flex-direction: column;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #FFF8E7;
+    /*slide nav bar out from left*/
+    transition: 0.3s;
+        box-shadow:
+        0 10px 27px rgba(0, 0, 0, 0.05);
+    height: auto;
+  }
+  .navLeft{
+    flex-direction: column;
+  }
+  .navListItem{
+    margin: 1.5rem 0;
+  }
+  /*when js assigns active class reveal the nav bar*/
+  .navMenu.active{
+    right: 0;
   }
   /*style spacing for logo company name and hamburger*/
-  .backupLogo{
-    border: solid yellow;
+  .mobileLogo{
     font-family: navFont;
     display: block;
     width: 70%;
@@ -86,21 +121,30 @@ nav .navMenu{
     align-items: center;
     justify-content: space-evenly;
   }
-  .backupLogo .ezRideLogo{
+  .mobileLogo .ezRideLogo{
     width: 110px;
     height: auto;
   }
-  .hamburger{
-    height: 25px;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  /*hide logo and title when mobile nav is displayed*/
+  .navCenter{
+    display: none;
   }
-  .hamburgerBar{
+  .hamburger{
     display: block;
-    width: 50px;
-    height: 5px;
-    background-color: black;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+  .hamburger.active .hamburgerBar:nth-child(2) {
+      opacity: 0;
+  }
+
+  .hamburger.active .hamburgerBar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+      width: 55px;
+  }
+
+  .hamburger.active .hamburgerBar:nth-child(3) {
+      transform: translateY(-11px) rotate(-45deg);
+      width: 55px;
   }
 }
