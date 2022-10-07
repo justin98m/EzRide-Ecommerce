@@ -1,0 +1,23 @@
+html{
+  background-color: #e4dac2;
+  color: black;
+}
+
+body{
+  height: 100vh;
+  border: solid green;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*fonts for entire website*/
+@font-face {
+  font-family: navFont;
+  src: url(Peralta-Regular.ttf);
+}
+@font-face {
+  font-family: mainFont;
+  src: url(Lora-VariableFont_wght.ttf);
+}

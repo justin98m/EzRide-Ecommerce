@@ -1,0 +1,106 @@
+/*
+https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci
+*/
+/******    Nav Bar Default Styling  ********/
+/*Outter Most Container*/
+nav{
+  background-color: #c4bdac;
+  border: solid blue;
+  height: 13%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+/*Nav bar content positioning*/
+nav .navMenu{
+  border: solid yellow;
+  font-family: navFont;
+  font-size: 18px;
+  display: flex;
+  height: 100%;
+  width: 90%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+/*
+  Take room in nav bar
+  space left side nav links evenly and centered
+ */
+.navLeft{
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navCenter{
+  border: solid green;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*Centers Content within this container relative to outter containers */
+  flex-basis: 25%;
+}
+.ezRideLogo{
+  width: 105px;
+  height: auto;
+}
+.navLink, .navLink:active{
+  text-decoration: none;
+  color: inherit;
+  border: solid red;
+}
+.navRight{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 15%
+}
+.navListItem{
+  text-decoration: none;
+  list-style: none;
+}
+.backupLogo{
+  display: none;
+}
+.hamburger{
+  display: none;
+}
+/*Tablet and smaller styling*/
+@media screen and (max-width: 831px) {
+  nav .navMenu{
+    position: fixed;
+    left: -100%;
+  }
+  /*style spacing for logo company name and hamburger*/
+  .backupLogo{
+    border: solid yellow;
+    font-family: navFont;
+    display: block;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .backupLogo .ezRideLogo{
+    width: 110px;
+    height: auto;
+  }
+  .hamburger{
+    height: 25px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hamburgerBar{
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: black;
+  }
+}
