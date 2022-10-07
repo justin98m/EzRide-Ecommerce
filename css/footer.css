@@ -44,12 +44,7 @@ footer section{
   flex-basis: 70%;
 }
 .footerRight{
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  flex-basis: 20%;
-  align-items: center;
-  flex-wrap: nowrap;
+  margin-top: 6%;
 }
 .footerListItem{
   text-decoration: none;
@@ -59,11 +54,6 @@ footer section{
   width: 60px;
   height: auto;
   box-shadow: 3px 5px black;
-}
-@media screen and (max-width: 1085px) {
-  .email{
-    display: none;
-  }
 }
 @media screen and (max-width: 500px) {
   .footerCenter{

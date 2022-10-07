@@ -147,4 +147,7 @@ nav{
       transform: translateY(-11px) rotate(-45deg);
       width: 55px;
   }
+  .companyName{
+    font-size: 3em;
+  }
 }
