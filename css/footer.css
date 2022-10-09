@@ -1,7 +1,4 @@
-/*
-https://dev.to/devggaurav/let-s-build-a-responsive-footerbar-and-hamburger-menu-using-html-css-and-javascript-4gci
-*/
-/******    Css Bar Styling ********/
+/******    Css footer Styling ********/
 footer{
   background-color: #9AD0B7;
   height: 14%;
@@ -11,6 +8,7 @@ footer{
 footer ul{
   font-family: navFont;
   font-size: 1.25em;
+  /*Space containers evenly  */
   display: flex;
   height: 100%;
   flex-direction: row;
@@ -21,9 +19,11 @@ footer ul{
 .footerLink {
   color: #6C0000;
 }
+/* All sections should maximize height within footer */
 footer section{
   height: 100%;
 }
+/*align links vertically*/
 .footerLeft{
   display: flex;
   flex-direction: column;
@@ -36,6 +36,7 @@ footer section{
   text-decoration: none;
   color: inherit;
 }
+/* align social media links */
 .footerCenter{
   height: 100%;
   display: flex;
@@ -54,7 +55,9 @@ footer section{
   height: auto;
   box-shadow: 3px 5px black;
 }
+/* Tablet/Mobile Styling */
 @media screen and (max-width: 500px) {
+/* Align media links vertically */
   .footerCenter{
     display: flex;
     flex-wrap: wrap;

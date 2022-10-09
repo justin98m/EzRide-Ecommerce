@@ -17,6 +17,7 @@ main{
   display: none;
 }
 .product{
+  /* Add green rounded border */
   border: solid #9AD0B7 8px;
   border-radius: 25px;
   margin-bottom: 4%;
@@ -27,6 +28,7 @@ main{
  -o-box-shadow: 10px 0px 5px  rgba(0,0,0,0.6);
  background-color: #FFF8E7;
 }
+/* all p tags use same font , color and pos */
 .product p{
   font-family: mainFont;
   color: #055831;
@@ -37,20 +39,21 @@ main{
   font-weight: bold;
   font-size: 1.5em;
 }
+/* fixed width and heign keeps all containers a similar size */
 .productImage{
   width: 400px;
   height: 350px;
 }
-
+/*max width prevents widening container*/
 .productDescription{
   font-size: 1.2em;
   max-width: 400px;;
 }
+/* aligns buy button and price */
 .priceButtonContainer{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
 .productPrice{
   border: solid red 5px;
@@ -72,13 +75,10 @@ main{
 .buyButton:hover{
   background-color: #FFF8E7;
 }
-.productImage{
-  font-size: 1.6em;
-  font-weight: bold;
 
-}
 /*Tablet and mobile CSS*/
 @media (max-width: 838px){
+  /* decrease fixed widths for smaller screens */
   .productImage{
     width: 280px;
     height: auto;

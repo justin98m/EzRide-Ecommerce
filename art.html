@@ -11,33 +11,34 @@
     <link rel="stylesheet" href="./css/art.css">
   </head>
   <body>
+    <!-- NAV BAR -->
     <header class="navContainer">
       <nav>
         <ul class="navMenu">
+          <!-- LEFT SIDE OF NAV BAR -->
           <section class="navLeft">
-            <li class="navListItem"><a class="navLink " href="index.html">Home</a></li>
+            <li class="navListItem"><a class="navLink" href="index.html">Home</a></li>
             <li class="navListItem"><a class="navLink" href="products.html">Bikes</a></li>
             <li class="navListItem"><a class="navLink" href="contact.html">Contact US</a></li>
           </section>
-
+          <!-- CENTER OF NAV BAR (LOGO + COMPANY NAME) -->
           <a class="navCenter navLink" href="index.html">
             <li class="navListItem">
               <img src="../media/nohandsgif.gif" class="ezRideLogo"alt="bike logo">
             </li>
             <li class="navListItem companyName">EzRide</li>
           </a>
-
+          <!-- RIGHT SIDE OF NAV BAR -->
           <section class="navRight">
             <li class="navListItem"><a class="navLink active" href="art.html">Art</a></li>
-              </button>
           </section>
         </ul>
-
+        <!-- CENTER OF NAV FOR MOBILE ONLY, HIDDEN BY DEFAULT -->
         <a class="navLink mobileLogo" href="index.html">
           <img src="../media/nohandsgif.gif" class="ezRideLogo"alt="bike logo">
           <span class="backupTitle companyName">EzRide<span>
         </a>
-
+        <!-- HAMBURGER HIDDEN BY DEFAULT -->
         <div class="hamburger">
           <span class="hamburgerBar"></span>
           <span class="hamburgerBar"></span>
@@ -45,8 +46,7 @@
         </div>
 
       </nav>
-    </header>
-    <!-- Only unique Code on this Site <!-->
+    </header>    <!-- Only unique Code on this Site <!-->
     <main class="artworkContainer">
       <!-- placeholder element never actually used !-->
       <div class="artwork" id="template">
@@ -55,13 +55,16 @@
       </div>
 
     </main>
+    <!-- FOOTER CODE -->
     <footer>
       <ul>
+        <!-- LEFT SIDE OF FOOTER CONTAINING LINKS -->
         <section class="footerLeft">
           <a class="footerLink" href="products.html"><li class="footerListItem">Bikes</li></a>
           <a class="footerLink" href="gear.html"><li class="footerListItem">Gear</li></a>
           <a class="footerLink" href="art.html"><li class="footerListItem">Art</li></a>
         </section>
+        <!-- SOCIAL MEDIA IMAGES AND LINKS -->
         <section class="footerCenter">
           <a class="footerLink" target="_blank" href="https://www.twitter.com">
             <li class="footerListItem">
@@ -84,11 +87,12 @@
             </li>
           </a>
         </section>
+        <!-- LOGO PLACEMENT -->
         <section class="footerRight">
           <img src="../media/nohandsgif.gif" class="ezRideLogo"alt="bike logo">
         </section>
       </ul>
-    </footers
+    </footer>
   </body>
   <script type="text/javascript" src="scripts/nav.js"></script>
   <script type="module" src="scripts/fetch-art.js"></script>

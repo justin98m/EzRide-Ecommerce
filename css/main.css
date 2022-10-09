@@ -1,8 +1,8 @@
+/* Files css is used on every html page */
 html{
   background-color: #FFF8E7;
   color: black;
 }
-
 body{
   height: 100vh;
 }

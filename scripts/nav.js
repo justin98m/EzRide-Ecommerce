@@ -1,10 +1,10 @@
+//asign correlating html nodes to vars
 let hamburger = document.querySelector('.hamburger');
 let navMenu = document.querySelector('.navMenu');
 let navlinks = document.querySelectorAll('.navLink');
 
 navlinks.forEach(link => {
   //untoggles mobile nav menu when link is clicked
-  //needed if same page is clicked
   link.addEventListener('click',() =>{
       hamburger.classList.remove('active');
       navMenu.classList.remove('active');

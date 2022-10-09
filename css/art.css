@@ -9,11 +9,14 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
+/* Some images are really tall so fixing height creates even spacing
+among elements
+ */
 .artworkImage{
   width : auto;
   height: 270px;
 }
+/* border and shadow styling of artwork */
 .artwork{
   border: solid #9AD0B7 8px;
   border-radius: 25px;
