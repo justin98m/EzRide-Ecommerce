@@ -1,9 +1,24 @@
-import data from '../products.json' assert {type: 'json'};
 
-let products = data.products;
-console.log(products);
-products.forEach(product => {
-  console.log(product.name);
-  console.log(product.description);
-  console.log(product.price);
-});
+class fetchInject {
+  constructor(createNode, containerNode) {
+    this.createNode = createNode;
+    this.containerNode = containerNode  }
+  getFile(jsonFile){
+    fetch(jsonFile)
+    .then(response => response.json())
+    .then(data => this.run(Object.values(data)[0]))
+  }
+  injectHtml(node){
+    this.containerNode.appendChild(node);
+  }
+  run(data){
+    console.log(data[0]);
+    let itemArr =  data;
+    itemArr.forEach(item => {
+      let node = this.createNode(item);
+      this.injectHtml(node);
+    })
+  }
+
+}
+export  {fetchInject};

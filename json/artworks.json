@@ -1,0 +1,29 @@
+{
+  "products": [
+
+    {
+      "imgPath" : "/media/artwork/skeletonBikes.jpeg",
+      "alt" : "8 skeletons on bikes (5 big, 3 small) "
+    },
+    {
+      "imgPath" : "/media/artwork/toadFrog.jpeg",
+      "alt" : "Toad and a frog on a tandem bike "
+    },
+    {
+      "imgPath" : "/media/artwork/boy.jpeg",
+      "alt" : ""
+    },
+    {
+      "imgPath" : "/media/artwork/womens1897bike.jpeg",
+      "alt" : "18th centrury drawing of 5 women riding bicycles"
+    },
+    {
+      "imgPath" : "/media/artwork/commuterKakashi.jpeg",
+      "alt" : ""
+    },
+    {
+      "imgPath" : "/media/artwork/bicycleNun.jpeg",
+      "alt" : "Nun on a bicycle"
+    }
+  ]
+}

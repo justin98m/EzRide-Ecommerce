@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "name" : "Blue Lightning",
+      "description" : "Electic fat tired bike reaching speeds up to 25 mph unassisted.",
+      "price" : 499,
+      "imgPath" : "/media/inventory/BlueLightning.jpg",
+      "alt" : "Blue Wheeled Electric Bike"
+    },
+    {
+      "name" : "Dark Magic",
+      "description" : "Gold Rimmed Single Speed Flat Bar Bike",
+      "price" : 325,
+      "imgPath" : "/media/inventory/darkMagic.jpg",
+      "alt" : "Gold Rimmed Single Speed Flat Bar Bike"
+    },
+    {
+      "name" : "Hanging Fruit Mixed Lot",
+      "description" : "Mix Lot of 6 bikes",
+      "price" : 1300,
+      "imgPath" : "/media/inventory/hangingFruit.jpg",
+      "alt" : "3 bikes hanging on a tree and 3 bike on level ground"
+    },
+    {
+      "name" : "All City No Fun",
+      "description" : "Single Speed Gold Chained Flat Bar Bike",
+      "price" : 299,
+      "imgPath" : "/media/inventory/allCityNoFun.jpg",
+      "alt" : "Single Speed Gold Chained Flat Bar Bike"
+    },
+    {
+      "name" : "Jamison's Ventura",
+      "description" : "Black Jamison Sport Ventura ",
+      "price" : 179,
+      "imgPath" : "/media/inventory/JamisonsVentura.jpg",
+      "alt" : "Black Jamison Sport Ventura Bike"
+    },
+    {
+      "name" : "Crate 'O' Maverick",
+      "description" : "Trek hybrid included with rear rack and milk crate",
+      "price" : 179,
+      "imgPath" : "/media/inventory/maverickBasket.jpg",
+      "alt" : "Black Trek Bicycle with crate attached to back"
+    },
+    {
+      "name" : "Panasonic Speed",
+      "description" : "Vintage Panasonic freshly repaired with new parts",
+      "price" : 199,
+      "imgPath" : "/media/inventory/panasonicSpeed.jpg",
+      "alt" : "Silver Panasonic Bicycle with gold rims"
+    },
+    {
+      "name" : "The Red Knight",
+      "description" : "Sava X Three Racing Bike",
+      "price" : 499,
+      "imgPath" : "/media/inventory/RedKnight.jpg",
+      "alt" : "Red Bicycle with drop handle bars"
+    },
+    {
+      "name" : "Straws of Steel",
+      "description" : "Straw and wood covered frames built in 1980",
+      "price" : 699,
+      "imgPath" : "/media/inventory/vintageClose.jpg",
+      "alt" : "Straw Covered commuter Bicycle"
+    },
+    {
+      "name" : "SeeSense Front and Real Lights",
+      "description" : "Bluetooth enabled smart light with USB-C charging",
+      "price" : 80,
+      "imgPath" : "/media/inventory/SeeSense.png",
+      "alt" : "Front and rear light on 2 Bicycles"
+    },
+    {
+      "name" : "Winter Bike Gloves",
+      "description" : "Liner for gloves with the grip to keep control of your bike",
+      "price" : 40,
+      "imgPath" : "/media/inventory/bikeGloves.jpg",
+      "alt" : "Black Bike Gloves"
+    },
+    {
+      "name" : "Mideaval Bike Helmet",
+      "description" : "Brass Helmet That will definitly protect your noggin",
+      "price" : 99,
+      "imgPath" : "/media/inventory/bikeHelmet.jpg",
+      "alt" : "Mideaval Brass Helmet"
+    }
+  ]
+}
