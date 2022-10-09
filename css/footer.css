@@ -6,6 +6,7 @@ footer{
   background-color: #9AD0B7;
   height: 14%;
   width: 100%;
+  margin-top: 25px;
 }
 footer ul{
   font-family: navFont;
@@ -43,9 +44,7 @@ footer section{
   align-items: center;
   flex-basis: 70%;
 }
-.footerRight{
-  margin-top: 6%;
-}
+
 .footerListItem{
   text-decoration: none;
   list-style: none;
