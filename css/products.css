@@ -1,0 +1,92 @@
+/*Desktop Main Css*/
+main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.title{
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 3em;
+  margin: 15px 0;
+  color: #055831;
+}
+/*Hide the template div*/
+#template{
+  display: none;
+}
+.product{
+  border: solid #9AD0B7 8px;
+  border-radius: 25px;
+  margin-bottom: 4%;
+  /*shadow Styling (Corelangs.com/css/box/shadow.html)*/
+  box-shadow: 10px 0px 5px  rgba(0,0,0,0.6);
+ -moz-box-shadow: 10px 0px 5px  rgba(0,0,0,0.6);
+ -webkit-box-shadow: 10px 0px 5px  rgba(0,0,0,0.6);
+ -o-box-shadow: 10px 0px 5px  rgba(0,0,0,0.6);
+ background-color: #FFF8E7;
+}
+.product p{
+  font-family: mainFont;
+  color: #055831;
+  text-align: center;
+}
+.productName{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.productImage{
+  width: 400px;
+  height: 350px;
+}
+
+.productDescription{
+  font-size: 1.2em;
+  max-width: 400px;;
+}
+.priceButtonContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+.productPrice{
+  border: solid red 5px;
+  border-radius: 7px;
+  font-size: 1.6em;
+  font-weight: bold;
+  flex-basis: 40%;
+}
+.buyButton{
+  font-family: mainFont;
+  font-size: 1.2em;
+  border: solid blue 4px;
+  border-radius: 7px;
+  width: 90px;
+  height: 35px;
+  flex-basis: 40%;
+  background-color: #9AD0B7;
+}
+.buyButton:hover{
+  background-color: #FFF8E7;
+}
+.productImage{
+  font-size: 1.6em;
+  font-weight: bold;
+
+}
+/*Tablet and mobile CSS*/
+@media (max-width: 838px){
+  .productImage{
+    width: 280px;
+    height: auto;
+  }
+  .productName{
+    max-width: 280px;
+  }
+  .productDescription{
+    max-width: 280px;
+  }
+}
