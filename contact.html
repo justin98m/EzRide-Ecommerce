@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/contact.css">
   </head>
   <body>
     <!-- NAV BAR -->
@@ -46,7 +47,35 @@
 
       </nav>
     </header>
-        <p>Text Here YO</p>
+    <header class="contactTitle">Contact Us</header>
+    <!-- Contact Page code here -->
+    <main class="contactContainer">
+      <!-- Faq list drop down menu -->
+      <section class="faq">
+        <header class="faqTitle">Frequently Asked Questions</header>
+        <ul class="faqContainer">
+          <!-- template container to be reproduced -->
+          <li class="questionAnswer" id="template">
+            <div class="questionContainer">
+              <p class="question"></p>
+              <p class="carrot">&#8964;</p>
+            </div>
+            <div class="answerContainer closed" >
+              <p class="answer"></p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- CONTACT FORM -->
+      <form class="contactForm" action="contact.html">
+        <label for="fName">First Name</label>
+        <input type="text" name="fName"placeholder="Name">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="example@email.com">
+        <label for="message">Message</label>
+        <textarea class="message" name="message" rows="10" cols="50"></textarea>
+      </form>
+    </main>
     <!-- FOOTER CODE -->
     <footer>
       <ul>
@@ -86,6 +115,6 @@
       </ul>
     </footer>
   </body>
-  <script type="text/javascript" src="scripts/nav.js">
-  </script>
+  <script type="text/javascript" src="scripts/nav.js"></script>
+  <script type="module" src="scripts/contact.js"></script>
 </html>
