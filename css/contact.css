@@ -2,10 +2,12 @@
 .contactContainer{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: mainFont;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
+  padding-bottom: 5em;
+
 }
 .contactTitle{
   font-size: 2em;
@@ -28,6 +30,7 @@
 }
 .faqContainer{
     flex-basis: 90%;
+    list-style: none;
 }
 #template{
   display: none;
@@ -51,11 +54,11 @@
   font-size: 1.4em;
   cursor: pointer;
 }
-
-.answerContainer{
-  display: none;
+/* toggled by js to display answers to faq */
+.open{
+  display: block;
 }
-.answerContainer .closed{
+.closed{
   display: none;
 }
 .answer{
@@ -89,7 +92,8 @@
 }
 .contactForm input {
   background-color:  #FFF8E7;
-  flex-basis: 100%;
+  flex-basis: 90%;
+  width: 100%;
   height: 2.6em;
   font-size: 1.3em;
   margin-top: 5px;
@@ -97,13 +101,17 @@
 .message{
   margin-top: 5px;
   font-size: 1.3em;
-  flex-basis: 100%;
+  flex-basis: 90%;
+  width: 90%;
   background-color:  #FFF8E7;
+  margin-bottom: 15px;
+  resize:none;
 
 }
 /*Tablet and mobile CSS*/
-@media (max-width: 800px){
+@media (max-width: 810px){
   .contactContainer{
+    border: solid red 2px;
     /* put form on top of faw */
     flex-direction: column-reverse;
   }
@@ -111,5 +119,13 @@
     /* remove shadow */
     box-shadow: 0;
     margin-bottom: 7px;
+    flex-basis: 100%;
   }
+  .faq{
+    flex-basis: 100%;
+  }
+  .faqContainer{
+    margin-left: 6%;
+  }
+
 }

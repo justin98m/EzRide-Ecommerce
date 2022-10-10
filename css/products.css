@@ -4,6 +4,7 @@ main{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 5em; 
 }
 .title{
   flex-basis: 100%;

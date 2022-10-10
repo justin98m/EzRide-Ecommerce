@@ -1,9 +1,10 @@
 /******    Css footer Styling ********/
 footer{
   background-color: #9AD0B7;
-  height: 14%;
+  height: 6em;
   width: 100%;
-  margin-top: 25px;
+  bottom: 0;
+  
 }
 footer ul{
   font-family: navFont;
@@ -31,6 +32,10 @@ footer section{
 }
 .footerLink{
   text-decoration: none;
+}
+.footerLink:hover{
+  color: black;
+  cursor: pointer;
 }
 .footerListItem{
   text-decoration: none;

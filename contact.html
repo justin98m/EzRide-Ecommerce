@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>EZ Ride</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="media/faveicon.ico">
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/footer.css">
@@ -69,11 +69,13 @@
       <!-- CONTACT FORM -->
       <form class="contactForm" action="contact.html">
         <label for="fName">First Name</label>
-        <input type="text" name="fName"placeholder="Name">
+        <input type="text" name="fName"placeholder="Name" required>
         <label for="email">Email</label>
-        <input type="email" name="email" placeholder="example@email.com">
+        <input type="email" name="email" placeholder="example@email.com" required>
         <label for="message">Message</label>
-        <textarea class="message" name="message" rows="10" cols="50"></textarea>
+        <textarea required class="message" name="message" rows="10" cols="50" >
+        </textarea>
+        <input type="submit" name="submit" value="submit" class="submit">
       </form>
     </main>
     <!-- FOOTER CODE -->
@@ -82,7 +84,7 @@
         <!-- LEFT SIDE OF FOOTER CONTAINING LINKS -->
         <section class="footerLeft">
           <a class="footerLink" href="products.html"><li class="footerListItem">Bikes</li></a>
-          <a class="footerLink" href="gear.html"><li class="footerListItem">Gear</li></a>
+          <a class="footerLink" href="products.html"><li class="footerListItem">Gear</li></a>
           <a class="footerLink" href="art.html"><li class="footerListItem">Art</li></a>
         </section>
         <!-- SOCIAL MEDIA IMAGES AND LINKS -->
@@ -116,5 +118,6 @@
     </footer>
   </body>
   <script type="text/javascript" src="scripts/nav.js"></script>
-  <script type="module" src="scripts/contact.js"></script>
+  <script type="module" src="scripts/fetch-faq.js"></script>
+  <script type="text/javascript" src="scripts/faq-dropdown.js"></script>
 </html>
