@@ -28,7 +28,7 @@ among elements
   -o-box-shadow: 10px 0px 5px  rgba(0,0,0,0.6);
   background-color: #FFF8E7;
 }
-/* smaller images for mobile*/
+/* smaller images for mobil*/
 @media (max-width: 500px){
   .artworkImage{
     width : 350px;
