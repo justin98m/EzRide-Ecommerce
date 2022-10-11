@@ -20,4 +20,4 @@ let productInject = new fetchInject(
   createProductNode,
   document.querySelector('.productContainer'),
 )
-productInject.getFile('/json/products.json')
+productInject.getFile('../json/products.json')

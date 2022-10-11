@@ -7,7 +7,7 @@ class fetchInject {
     this.containerNode = containerNode  }
   getFile(jsonFile){
     fetch(jsonFile)
-    .then(response => response.json())
+    .then(response => response.json())    
     .then(data => this.run(Object.values(data)[0]))
   }
   injectHtml(node){
